@@ -51,4 +51,23 @@ body {
     color: $black;
     padding-top: 64px;
   }
+
+  &__add {
+    padding: 12px;
+    font-size: 18px;
+    color: $black;
+    border: none;
+    border-radius: 4px;
+    background: $white;
+    margin: 48px 0 26px;
+  }
+
+  &__remove {
+    background: none;
+    border: none;
+    min-width: 216px;
+    padding: 12px;
+    font-size: 14px;
+    color: #F5E5E7;
+  }
 }
