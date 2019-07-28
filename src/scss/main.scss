@@ -71,3 +71,9 @@ body {
     color: #F5E5E7;
   }
 }
+
+@media (max-width: 600px) {
+  .main__header {
+    font-size: 24px;
+  }
+}
