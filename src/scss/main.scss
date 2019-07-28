@@ -11,6 +11,33 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background-color: $blue;
+  font-family: Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20%;
+}
+
+.glass {
+  position: relative;
+  margin: auto;
+  width: 280px;
+  height: 280px;
+  background-image: url('/assets/img/water-glass.svg');
+
+  &__count {
+    position: absolute;
+    top: 39.04%;
+    left: 36%;
+    bottom: 48.89%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 112px;
+    line-height: 131px;
+    text-align: center;
+    color: $black;
+  }
 }
