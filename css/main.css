@@ -329,7 +329,7 @@ body {
   margin: auto;
   width: 280px;
   height: 280px;
-  background-image: url("/assets/img/water-glass.svg"); }
+  background-image: url("./../assets/img/water-glass.svg"); }
   .glass__count {
     position: absolute;
     top: 39.04%;
