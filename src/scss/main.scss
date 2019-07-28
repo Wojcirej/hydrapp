@@ -18,21 +18,20 @@ body {
 .header {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 
 .glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin: auto;
   width: 280px;
   height: 280px;
-  background-image: url('/assets/img/water-glass.svg');
+  background: url('../assets/img/water-glass.svg') center center;
 
   &__count {
-    position: absolute;
-    top: 39.04%;
-    left: 36%;
-    bottom: 48.89%;
     font-style: normal;
     font-weight: bold;
     font-size: 112px;
