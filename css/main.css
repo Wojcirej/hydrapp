@@ -322,19 +322,24 @@ body {
 .header {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20%; }
+  margin-bottom: 15%; }
 
 .glass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   margin: auto;
   width: 280px;
   height: 280px;
-  background-image: url("./../assets/img/water-glass.svg"); }
+  background: url("../assets/img/water-glass.svg") center center; }
   .glass__count {
-    position: absolute;
-    top: 39.04%;
-    left: 36%;
-    bottom: 48.89%;
     font-style: normal;
     font-weight: bold;
     font-size: 112px;
