@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,22 +310,18 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  background: #3767AD; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  background-color: #3767AD;
-  font-family: Verdana, sans-serif; }
-
-.header {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15%; }
-
-.glass {
+  color: #FFFFFF;
+  background: #3767AD;
+  font-family: Roboto;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,17 +331,44 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  margin: auto;
+  padding: 16px; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto; }
+  .main__header {
+    font-size: 55px;
+    margin: 0 0 64px 0;
+    padding: 0;
+    text-transform: uppercase; }
+
+.glass {
   width: 280px;
   height: 280px;
-  background: url("../assets/img/water-glass.svg") center center; }
-  .glass__count {
-    font-style: normal;
-    font-weight: bold;
+  background: url("../assets/img/water-glass.svg") center center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .glass__counter {
+    display: block;
     font-size: 112px;
-    line-height: 131px;
-    text-align: center;
-    color: #000000; }
+    color: #000000;
+    padding-top: 64px; }
 
 /*# sourceMappingURL=main.css.map */
