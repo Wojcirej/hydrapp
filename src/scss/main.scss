@@ -1,9 +1,10 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
+  background: $blue;
 }
 
 *, *:before, *:after {
@@ -11,32 +12,43 @@ html {
 }
 
 body {
-  background-color: $blue;
-  font-family: Verdana, sans-serif;
-}
-
-.header {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15%;
-}
-
-.glass {
+  color: $white;
+  background: $blue;
+  font-family: Roboto;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  padding: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
+
+  &__header {
+    font-size: 55px;
+    margin: 0 0 64px 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}
+
+.glass {
   width: 280px;
   height: 280px;
   background: url('../assets/img/water-glass.svg') center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &__count {
-    font-style: normal;
-    font-weight: bold;
+  &__counter {
+    display: block;
     font-size: 112px;
-    line-height: 131px;
-    text-align: center;
     color: $black;
+    padding-top: 64px;
   }
 }
